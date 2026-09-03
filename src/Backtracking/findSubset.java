@@ -20,8 +20,7 @@ public class findSubset {
     public static void main(String[] args) {
 
         String str = "abc";
-        findSS(str, 0, "");
-        
+        findSS(str, 0, "");   
     }
     
 }
