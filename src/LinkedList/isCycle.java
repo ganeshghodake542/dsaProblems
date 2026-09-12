@@ -1,50 +1,50 @@
-class ListNode {
-    int val;
-    ListNode next;
+// class ListNode {
+//     int val;
+//     ListNode next;
 
-    ListNode(int val) {
-        this.val = val;
-        this.next = null;
-    }
-}
+//     ListNode(int val) {
+//         this.val = val;
+//         this.next = null;
+//     }
+// }
 
-public class isCycle {
+// public class isCycle {
 
-    public boolean hasCycle(ListNode head) {
+//     public boolean hasCycle(ListNode head) {
 
-        ListNode slow = head;
-        ListNode fast = head;
+//         ListNode slow = head;
+//         ListNode fast = head;
 
-        while (fast != null && fast.next != null) {
+//         while (fast != null && fast.next != null) {
 
-            slow = slow.next;
-            fast = fast.next.next;
+//             slow = slow.next;
+//             fast = fast.next.next;
 
-            if (slow == fast) {
-                return true;
-            }
-        }
+//             if (slow == fast) {
+//                 return true;
+//             }
+//         }
 
-        return false;
-    }
+//         return false;
+//     }
 
-    public static void main(String[] args) {
+//     public static void main(String[] args) {
 
-        ListNode head = new ListNode(1);
-        ListNode second = new ListNode(2);
-        ListNode third = new ListNode(3);
-        ListNode fourth = new ListNode(4);
+//         ListNode head = new ListNode(1);
+//         ListNode second = new ListNode(2);
+//         ListNode third = new ListNode(3);
+//         ListNode fourth = new ListNode(4);
 
-        head.next = second;
-        second.next = third;
-        third.next = fourth;
+//         head.next = second;
+//         second.next = third;
+//         third.next = fourth;
 
-        fourth.next = second;
+//         fourth.next = second;
 
-        isCycle obj = new isCycle();
+//         isCycle obj = new isCycle();
 
-        boolean result = obj.hasCycle(head);
+//         boolean result = obj.hasCycle(head);
 
-        System.out.println(result);
-    }
-}
+//         System.out.println(result);
+//     }
+// }
