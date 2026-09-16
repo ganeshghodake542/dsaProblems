@@ -13,8 +13,7 @@ public class basicBuiltInMethod {
         System.out.println(st);
         st.pop();
         System.out.println(st);
-        
-
+    
     }
     
 }
