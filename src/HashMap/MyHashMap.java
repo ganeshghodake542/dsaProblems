@@ -31,7 +31,6 @@ class MyHashMap {
 
         Node temp = buckets[index];
 
-        // Key already exists
         while (temp != null) {
 
             if (temp.key == key) {
@@ -42,10 +41,8 @@ class MyHashMap {
             temp = temp.next;
         }
 
-        // Create new node
         Node newNode = new Node(key, value);
 
-        // Insert at beginning
         newNode.next = buckets[index];
         buckets[index] = newNode;
     }
