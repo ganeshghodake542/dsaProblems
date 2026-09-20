@@ -15,6 +15,5 @@ public class CountDistnElement {
 
         System.out.println(set.size());
 
-    }
-    
+    }    
 }
