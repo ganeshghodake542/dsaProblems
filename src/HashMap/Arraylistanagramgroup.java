@@ -26,6 +26,8 @@ public class Arraylistanagramgroup {
 
             map.get(key).add(str);
         }
+        System.out.println(new ArrayList<>(map.values()));
+
     }
 
 }
